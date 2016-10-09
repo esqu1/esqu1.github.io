@@ -6,10 +6,6 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/animate.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-		<!-- Compiled and minified JavaScript -->
-
-
-
 	</head>
 	<body>
 
@@ -22,7 +18,7 @@
 			</nav>
 		</div>
 
-		<div class="sunset" data-stellar-background-ratio="0.5" style="background-position: 50% 0px;"> </div>
+		<div class="sunset" data-stellar-background-ratio="0.5" ><span>It's me.</span></div>
 		<div class="container">
 			<div class="wow fadeInLeft">
 			<h1>About Me</h1>
@@ -38,7 +34,10 @@
         <script>
             new WOW().init();
             	$(function(){
-			$.stellar();
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 10
+			});
 		});
         </script>
 	</body>
