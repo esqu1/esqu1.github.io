@@ -28,6 +28,21 @@ p{
 	padding-bottom: 50px;
 }
 
+.academics{
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/academics.jpg);
+	background-size: 105%;
+	width: 100%;
+	display: inline-block;
+	height: 300px;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	font-family: 'Roboto Slab', serif;
+	line-height: 300px;
+	text-shadow: 0 2px 0 black, 0 0 10px black;
+	padding-bottom: 50px;
+}
+
 span{
 	display: inline-block;
     vertical-align: middle;
@@ -41,18 +56,20 @@ span{
 
 a:link, a:visited{
 	text-decoration: none;
-	color: #E9E9E9;	
 	-webkit-transition: .5s;
 	transition: .5s;
 }
 
 nav ul {
 	list-style-type: none;
-	margin: 0 20% 0 20%;
 	padding: 0;
     overflow: hidden;
-    background-color: transparent;
+    background-color: white;
     font-family: 'Rubik', serif;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
 }
 
 nav li {
@@ -63,7 +80,8 @@ nav li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none;    
+	color: #E9E9E9;	
 }
 
 nav li a:hover {

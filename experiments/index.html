@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Brandon Lin homepage</title>
 
 		<link rel="stylesheet" href="css/style.css">
@@ -11,8 +12,8 @@
 	<body>
 			<nav>
 				<ul>				
-					<li><a href="links.html">LINKS</a></li>
-					<li><a href="#">HOME</a></li>
+					<li><a href="#academics">ACADEMICS</a></li>
+					<li><a href="#">ABOUT ME</a></li>
 				</ul>
 			</nav>
 		<div class="wow fadeIn">
@@ -21,11 +22,28 @@
 
 		<div class="container">
 			<div class="wow fadeInLeft">
-			<h1>About Me</h1>
-			<img src="img/me.jpg" width="30%" align="left" style="padding-right: 30px; padding-bottom: 30px"/>
-			<p>I'm Brandon Lin, a freshman at the University of Pennsylvania. I am currently in the College of Arts and Sciences, but I hope to major in Chemical and Biomolecular Engineering through the School of Engineering.</p>
-			<p>Before coming to UPenn, I went to Stuyvesant High School, a school located in downtown Manhattan (New York City). While there, my main academic interests have been grounded in the hard sciences, mathematics, and computer science.</p>
-			<p>Some of my hobbies include speedcubing and music.</p></div>
+				<h1>About Me</h1>
+				<img src="img/me.jpg" width="30%" align="left" style="padding-top: 30px; padding-right: 30px; padding-bottom: 30px"/>
+				<p>I'm Brandon Lin, a freshman at the University of Pennsylvania. I am currently in the College of Arts and Sciences, but I hope to major in Chemical and Biomolecular Engineering through the School of Engineering.</p>
+				<p>Before coming to Penn, I went to Stuyvesant High School, a school located in downtown Manhattan (New York City). While there, my main academic interests have been grounded in the hard sciences, mathematics, and computer science.</p>
+				<p>Some of my other interests include speedcubing, coding, and music.</p>
+			</div>
+		</div>
+
+	<div id="academics"><div class="academics" data-stellar-background-ratio="0.2" ><span>Academics</span></div></div>
+
+		<div class="container">
+			<div class="wow fadeInRight">
+				<h1>Academics</h1>
+				<p>My main academic interests consist of:
+				<ul>
+					<li><b>Chemistry/Physics</b>, governing how our world works</li>
+					<li><b>Mathematics</b>, <a href="https://xkcd.com/435/">if you want to delve a bit deeper</a></li>
+					<li><b>Computer Science</b>, because coding :)</li>
+				</ul>
+				</p>
+				<p>I anticipate to major in Chemical and Biomolecular Engineering through the School of Engineering at Penn and minor in Actuarial Mathematics through the Wharton School of Business.</p>
+			</div>
 		</div>
 
     	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -33,12 +51,12 @@
     	<script src="js/jquery.stellar.min.js"></script>
         <script>
             new WOW().init();
-            	$(function(){
-			$.stellar({
-				horizontalScrolling: false,
-				verticalOffset: 5
+            $(function(){
+				$.stellar({
+					horizontalScrolling: false,
+					verticalOffset: -20
+				});
 			});
-		});
         </script>
 	</body>
 </html>
