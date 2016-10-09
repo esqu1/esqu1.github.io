@@ -6,23 +6,23 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/animate.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 	</head>
 	<body>
-
-		<div class="container">
-
-			<h1>Welcome!</h1>
-			<p>I'm Brandon. Welcome to my webpage.</p>
 			<nav>
-				~ <a href="http://esqu1.github.io">home</a> ~ <a href="links.html"> links </a> ~
+				<ul>				
+					<li><a href="links.html">LINKS</a></li>
+					<li><a href="#">HOME</a></li>
+				</ul>
 			</nav>
+		<div class="wow fadeIn">
+			<div class="sunset" data-stellar-background-ratio="0.2" ><span>It's me. Welcome to my webpage.</span></div>
 		</div>
 
-		<div class="sunset" data-stellar-background-ratio="0.5" ><span>It's me.</span></div>
 		<div class="container">
 			<div class="wow fadeInLeft">
 			<h1>About Me</h1>
-			<img src="img/me.jpg" width="30%" align="right"/>
+			<img src="img/me.jpg" width="30%" align="left" style="padding-right: 30px; padding-bottom: 30px"/>
 			<p>I'm Brandon Lin, a freshman at the University of Pennsylvania. I am currently in the College of Arts and Sciences, but I hope to major in Chemical and Biomolecular Engineering through the School of Engineering.</p>
 			<p>Before coming to UPenn, I went to Stuyvesant High School, a school located in downtown Manhattan (New York City). While there, my main academic interests have been grounded in the hard sciences, mathematics, and computer science.</p>
 			<p>Some of my hobbies include speedcubing and music.</p></div>
@@ -36,7 +36,7 @@
             	$(function(){
 			$.stellar({
 				horizontalScrolling: false,
-				verticalOffset: 10
+				verticalOffset: 5
 			});
 		});
         </script>

@@ -1,9 +1,5 @@
-body{
-	margin: 100px 0 0 0 ;
-}
-
 .container{
-	margin: 0 20% 0 20%;
+	margin: 50px 20% 0 20%;
 	padding: 20px;
 	font-family: 'Roboto Slab', serif;
 }
@@ -14,6 +10,7 @@ h1{
 
 p{
 	line-height: 200%;
+	padding: 10px;
 }
 
 .sunset{
@@ -21,13 +18,14 @@ p{
 	background-size: 105%;
 	width: 100%;
 	display: inline-block;
-	height: 400px;
+	height: 550px;
 	text-align: center;
 	color: white;
 	font-size: 40px;
 	font-family: 'Roboto Slab', serif;
-	line-height: 400px;
+	line-height: 500px;
 	text-shadow: 0 2px 0 black, 0 0 10px black;
+	padding-bottom: 50px;
 }
 
 span{
@@ -41,6 +39,33 @@ span{
 	margin: 0;
 }
 
-a:link{
+a:link, a:visited{
 	text-decoration: none;
+	color: #E9E9E9;	
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0 20% 0 20%;
+	padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    font-family: 'Rubik', serif;
+}
+
+nav li {
+	float: right;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+	color: #F49F0A;
 }
