@@ -1,3 +1,26 @@
-body{
-	margin: 0 100px 0 100px;
+.container{
+	margin: 100px 20% 0 20%;
+	font-family: 'Roboto Slab', serif;
 }
+
+h1{
+	text-align: center;
+}
+
+p{
+	line-height: 200%;
+}
+.sunset{
+	background-image: url(../img/sunset04.jpg);
+	background-size: 105%;
+	width: 100%;
+	display: block;
+	height: 400px;
+}
+
+
+* {
+	margin: 0;
+}
+
+
