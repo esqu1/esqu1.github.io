@@ -88,3 +88,10 @@ nav li a {
 nav li a:hover {
 	color: #F49F0A;
 }
+
+@media screen and (max-width: 760px){
+    .container{
+		margin: 0;
+		padding: 20px;
+	}
+}
