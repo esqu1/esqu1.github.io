@@ -1,7 +1,7 @@
 .container{
-	margin: 50px 20% 0 20%;
+	margin: 50px 20% 50px 20%;
 	padding: 20px;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Vollkorn', serif;
 }
 
 h1{
@@ -22,7 +22,7 @@ p{
 	text-align: center;
 	color: white;
 	font-size: 40px;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Vollkorn', serif;
 	line-height: 500px;
 	text-shadow: 0 2px 0 black, 0 0 10px black;
 	padding-bottom: 50px;
@@ -37,7 +37,7 @@ p{
 	text-align: center;
 	color: white;
 	font-size: 40px;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Vollkorn', serif;
 	line-height: 300px;
 	text-shadow: 0 2px 0 black, 0 0 10px black;
 	padding-bottom: 50px;
@@ -52,7 +52,7 @@ p{
 	text-align: center;
 	color: white;
 	font-size: 40px;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Vollkorn', serif;
 	line-height: 300px;
 	text-shadow: 0 2px 0 black, 0 0 10px black;
 	padding-bottom: 50px;
@@ -67,7 +67,22 @@ p{
 	text-align: center;
 	color: white;
 	font-size: 40px;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Vollkorn', serif;
+	line-height: 300px;
+	text-shadow: 0 2px 0 black, 0 0 10px black;
+	padding-bottom: 50px;
+}
+
+.desktop{
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/desktop.jpg);
+	background-size: 105%;
+	width: 100%;
+	display: inline-block;
+	height: 300px;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	font-family: 'Vollkorn', serif;
 	line-height: 300px;
 	text-shadow: 0 2px 0 black, 0 0 10px black;
 	padding-bottom: 50px;
