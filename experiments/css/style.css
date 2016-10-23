@@ -13,6 +13,12 @@ p{
 	padding: 10px;
 }
 
+.photo{
+	font-size: 60px;
+	font-family: 'Eczar', serif;
+
+}
+
 .sunset{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/urban-wallpaper-16.jpg);
 	background-size: 105%;
@@ -21,8 +27,6 @@ p{
 	height: 550px;
 	text-align: center;
 	color: white;
-	font-size: 40px;
-	font-family: 'Vollkorn', serif;
 	line-height: 500px;
 	text-shadow: 0 2px 0 black, 0 0 10px black;
 	padding-bottom: 50px;
@@ -36,8 +40,6 @@ p{
 	height: 300px;
 	text-align: center;
 	color: white;
-	font-size: 40px;
-	font-family: 'Vollkorn', serif;
 	line-height: 300px;
 	text-shadow: 0 2px 0 black, 0 0 10px black;
 	padding-bottom: 50px;
@@ -51,8 +53,6 @@ p{
 	height: 300px;
 	text-align: center;
 	color: white;
-	font-size: 40px;
-	font-family: 'Vollkorn', serif;
 	line-height: 300px;
 	text-shadow: 0 2px 0 black, 0 0 10px black;
 	padding-bottom: 50px;
@@ -66,8 +66,6 @@ p{
 	height: 300px;
 	text-align: center;
 	color: white;
-	font-size: 40px;
-	font-family: 'Vollkorn', serif;
 	line-height: 300px;
 	text-shadow: 0 2px 0 black, 0 0 10px black;
 	padding-bottom: 50px;
@@ -81,8 +79,6 @@ p{
 	height: 300px;
 	text-align: center;
 	color: white;
-	font-size: 40px;
-	font-family: 'Vollkorn', serif;
 	line-height: 300px;
 	text-shadow: 0 2px 0 black, 0 0 10px black;
 	padding-bottom: 50px;
