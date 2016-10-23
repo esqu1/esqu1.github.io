@@ -14,18 +14,18 @@
 	<body>
 			<nav>
 				<ul>
-					<li><a href="#desktop">CONTACT ME</a></li>
-					<li><a href="#speedcubing">SPEEDCUBING</a></li>
-					<li><a href="#coding">CODING</a></li>
-					<li><a href="#academics">ACADEMICS</a></li>
-					<li><a href="#">ABOUT ME</a></li>
+					<li><a href="#desktop" class="smoothScroll">CONTACT ME</a></li>
+					<li><a href="#speedcubing" class="smoothScroll">SPEEDCUBING</a></li>
+					<li><a href="#coding" class="smoothScroll">CODING</a></li>
+					<li><a href="#academics" class="smoothScroll">ACADEMICS</a></li>
+					<li><a href="#aboutme" class="smoothScroll">ABOUT ME</a></li>
 				</ul>
 			</nav>
 		<div class="wow fadeIn">
-			<div class="photo sunset" data-stellar-background-ratio="0.8" ><span>It's me. Welcome to my webpage.</span></div>
+			<div class="photo sunset" id="home"><span>It's me. Welcome to my webpage.</span></div>
 		</div>
 
-		<div class="container">
+		<div class="container" id="aboutme">
 			<div class="wow fadeInLeft">
 				<h1>About Me</h1>
 				<img src="img/me.jpg" width="30%" align="left" style="padding-top: 30px; padding-right: 30px; padding-bottom: 30px"/>
@@ -35,7 +35,7 @@
 			</div>
 		</div>
 
-		<div id="academics"><div class="photo academics" data-stellar-background-ratio="0.8" ><span>Academics</span></div></div>
+		<div class="photo academics wow fadeIn" id="academics"><span>Academics</span></div>
 
 		<div class="container">
 			<div class="wow fadeInRight">
@@ -52,7 +52,7 @@
 			</div>
 		</div>
 
-		<div id="coding"><div class="photo coding" data-stellar-background-ratio="0.8"><span>Coding</span></div></div>
+		<div class="photo coding wow fadeIn" id="coding"><span>Coding</span></div>
 
 		<div class="container">
 			<div class="wow flipInY">
@@ -63,7 +63,7 @@
 			</div>
 		</div>
 
-		<div id="speedcubing"><div class="photo speedcubing" data-stellar-background-ratio="0.8"><span>Speedcubing</span></div></div>
+		<div class="photo speedcubing wow fadeIn" id="speedcubing"><span>Speedcubing</span></div>
 
 		<div class="container">
 			<div class="wow flipInX">
@@ -73,9 +73,9 @@
 			</div>	
 		</div>
 
-		<div id="desktop"><div class="photo desktop" data-stellar-background-ratio="0.8"></div></div>
+		<div class="photo desktop wow fadeIn" id="desktop"></div>
 
-		<div class="container">
+		<div class="container wow zoomIn">
 			<h1>Want to get in touch?</h1>
 			<center><h2>Here's a copy of <a href="./BrandonLinResume.pdf">my resume</a>.</h2></center><br>
 			<div style="float:right">
@@ -91,12 +91,18 @@
 			</div>
 			<p><b>Phone #</b>: +1 (347) 886 4714</p>
 			<p><b>Email</b>: <a href="mailto:branlin@sas.upenn.edu">branlin@sas.upenn.edu</a></p>
+		</div>
 
+			<div class="footer">
+				<p>&copy; 2016 by Brandon Lin</p>
+				<p>Powered by Github Pages.</p>
+			</div>
 		</div>
 
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     	<script src="js/wow.min.js"></script>
     	<script src="js/jquery.stellar.min.js"></script>
+    	<script src="js/smoothscroll.js"></script>
         <script>
             new WOW().init();
             $(function(){
