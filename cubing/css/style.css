@@ -16,72 +16,43 @@ p{
 .photo{
 	font-size: 60px;
 	font-family: 'Eczar', serif;
-
+	background-size: 105%;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	color: white;
+	text-shadow: 0 2px 0 black, 0 0 10px black;
+	padding-bottom: 50px;
 }
 
 .sunset{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/urban-wallpaper-16.jpg);
-	background-size: 105%;
-	width: 100%;
-	display: inline-block;
 	height: 700px;
-	text-align: center;
-	color: white;
-	line-height: 900px;
-	text-shadow: 0 2px 0 black, 0 0 10px black;
-	padding-bottom: 50px;
+	line-height: 700px;
 }
 
 .academics{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/academics.jpg);
-	background-size: 105%;
-	width: 100%;
-	display: inline-block;
 	height: 300px;
-	text-align: center;
-	color: white;
 	line-height: 300px;
-	text-shadow: 0 2px 0 black, 0 0 10px black;
-	padding-bottom: 50px;
 }
 
 .coding{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/coding.jpg);
-	background-size: 105%;
-	width: 100%;
-	display: inline-block;
 	height: 300px;
-	text-align: center;
-	color: white;
 	line-height: 300px;
-	text-shadow: 0 2px 0 black, 0 0 10px black;
-	padding-bottom: 50px;
 }
 
 .speedcubing{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/cubing.jpg);
-	background-size: 105%;
-	width: 100%;
-	display: inline-block;
 	height: 300px;
-	text-align: center;
-	color: white;
 	line-height: 300px;
-	text-shadow: 0 2px 0 black, 0 0 10px black;
-	padding-bottom: 50px;
 }
 
 .desktop{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/desktop.jpg);
-	background-size: 105%;
-	width: 100%;
-	display: inline-block;
 	height: 300px;
-	text-align: center;
-	color: white;
 	line-height: 300px;
-	text-shadow: 0 2px 0 black, 0 0 10px black;
-	padding-bottom: 50px;
 }
 
 span{
