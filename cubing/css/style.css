@@ -27,13 +27,13 @@ p{
 
 .cube{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../../img/14590037_1351806814832162_660718812914753426_o.jpg);
-	line-height: 90vh;
+
 }
 
-span{
+.cube > span{
 	display: inline-block;
     vertical-align: middle;
-    line-height: normal;
+    top: 2.5vw;
 }
 
 * {
