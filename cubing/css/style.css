@@ -27,7 +27,7 @@ p{
 
 .cube{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../../img/14590037_1351806814832162_660718812914753426_o.jpg);
-	line-height: 100%;
+	line-height: 700px;
 }
 
 * {
@@ -77,6 +77,10 @@ nav li a:hover {
     .container{
 		margin: 0;
 		padding: 20px;
+	}
+	.cube{
+		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../../img/14590037_1351806814832162_660718812914753426_o.jpg);
+		line-height: 100px;
 	}
 }
 
