@@ -31,37 +31,6 @@ p{
 	line-height: 700px;
 }
 
-.academics{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/academics.jpg);
-	height: 300px;
-	line-height: 300px;
-}
-
-.coding{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/coding.jpg);
-	height: 300px;
-	line-height: 300px;
-}
-
-.speedcubing{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/cubing.jpg);
-	height: 300px;
-	line-height: 300px;
-}
-
-.desktop{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/desktop.jpg);
-	height: 300px;
-	line-height: 300px;
-}
-
-span{
-	display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-}
-
-
 * {
 	margin: 0;
 }
