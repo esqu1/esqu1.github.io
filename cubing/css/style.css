@@ -78,9 +78,16 @@ nav li a:hover {
 		margin: 0;
 		padding: 20px;
 	}
-	.cube{
-		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../../img/14590037_1351806814832162_660718812914753426_o.jpg);
-		line-height: 100px;
+	.photo{
+		font-size: 30px;
+		font-family: 'Eczar', serif;
+		background-size: 105%;
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		color: white;
+		text-shadow: 0 2px 0 black, 0 0 10px black;
+		padding-bottom: 50px;
 	}
 }
 
