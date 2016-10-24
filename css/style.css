@@ -25,34 +25,34 @@ p{
 	padding-bottom: 50px;
 }
 
-.city{
+.sunset{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/urban-wallpaper-16.jpg);
-	height: 700px;
-	line-height: 700px;
+	height: 45vw;
+	line-height: 45vw;
 }
 
 .academics{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/academics.jpg);
-	height: 300px;
-	line-height: 300px;
+	height: 19vw;
+	line-height: 19vw;
 }
 
 .coding{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/coding.jpg);
-	height: 300px;
-	line-height: 300px;
+	height: 19vw;
+	line-height: 19vw;
 }
 
 .speedcubing{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/cubing.jpg);
-	height: 300px;
-	line-height: 300px;
+	height: 19vw;
+	line-height: 19vw;
 }
 
 .desktop{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/desktop.jpg);
-	height: 300px;
-	line-height: 300px;
+	height: 19vw;
+	line-height: 19vw;
 }
 
 span{
