@@ -31,12 +31,6 @@ p{
 	width:100%;
 }
 
-.cube > span{
-	display: inline-block;
-    vertical-align: middle;
-    top: 2.5vw;
-}
-
 * {
 	margin: 0;
 }
