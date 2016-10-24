@@ -15,7 +15,7 @@ p{
 
 .photo{
 	position:absolute;
-	top: 14px;
+	height: 100%;
 	font-size: 5vw;
 	font-family: 'Eczar', serif;
 	background-size: 105%;
