@@ -25,7 +25,7 @@ p{
 	padding-bottom: 50px;
 }
 
-.sunset{
+.city{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/urban-wallpaper-16.jpg);
 	height: 700px;
 	line-height: 700px;
