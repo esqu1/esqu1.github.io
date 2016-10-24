@@ -25,8 +25,8 @@ p{
 	padding-bottom: 50px;
 }
 
-.sunset{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/urban-wallpaper-16.jpg);
+.cube{
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../../img/14590037_1351806814832162_660718812914753426_o.jpg);
 	height: 700px;
 	line-height: 700px;
 }
