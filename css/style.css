@@ -22,10 +22,9 @@ p{
 	text-align: center;
 	color: white;
 	text-shadow: 0 2px 0 black, 0 0 10px black;
-	padding-bottom: 50px;
 }
 
-.sunset{
+.city{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/urban-wallpaper-16.jpg);
 	height: 45vw;
 	line-height: 45vw;
