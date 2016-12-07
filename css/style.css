@@ -28,27 +28,35 @@ p{
 
 .city{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/geometric-wallpaper-6.jpg);
-
 	height: 45vw;
 	line-height: 45vw;
 }
 
 .academics{
-	/*background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/academics.jpg);*/
+	background: rgb(231, 76, 60);
+    background: -webkit-linear-gradient(rgb(231, 76, 60), rgb(192, 57, 43));
+    background: -o-linear-gradient(rgb(231, 76, 60), rgb(192, 57, 43));
+    background: -moz-linear-gradient(rgb(231, 76, 60), rgb(192, 57, 43));
 	background: linear-gradient(rgb(231, 76, 60), rgb(192, 57, 43));
 	height: 19vw;
 	line-height: 19vw;
 }
 
 .coding{
-	/*background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/coding.jpg);*/
+	background: rgb(52, 152, 219);
+    background: -webkit-linear-gradient(rgb(52, 152, 219),rgb(41, 128, 185));
+    background: -o-linear-gradient(rgb(52, 152, 219),rgb(41, 128, 185));
+    background: -moz-linear-gradient(rgb(52, 152, 219),rgb(41, 128, 185));
 	background: linear-gradient(rgb(52, 152, 219),rgb(41, 128, 185));
 	height: 19vw;
 	line-height: 19vw;
 }
 
 .speedcubing{
-	/*background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/cubing.jpg);*/
+	background: rgb(26, 188, 156);
+    background: -webkit-linear-gradient(rgb(26, 188, 156),rgb(22, 160, 133));
+    background: -o-linear-gradient(rgb(26, 188, 156),rgb(22, 160, 133));
+    background: -moz-linear-gradient(rgb(26, 188, 156),rgb(22, 160, 133));
 	background: linear-gradient(rgb(26, 188, 156),rgb(22, 160, 133));
 	height: 19vw;
 	line-height: 19vw;
