@@ -37,79 +37,51 @@ function hideP(){
 	});
 }
 
-function cubeshapeCases(){/*
-	var l,m;
-	for (var i = 1; i <= 3; i++){
-		l = [0,1,2,3];
-		m = [1,2,3];
-		$("#cubeshape" + i).click(function(){
-			l.splice(l.indexOf(i),1);
-			if(CUBESHAPE in l){				
-				m.splice(m.indexOf(i),1);
-				if(CUBESHAPE in m){
-					console.log(CUBESHAPE);
-					console.log("i =",i);
-					console.log(m);
-					for (var j = 0; j <= 1; j++){
-						$("#cu" + m[j]).hide();
-					}
-				}
-				$("#cu" + i).show();
-				CUBESHAPE = i;
-			} else {
-				$("#cu" + i).hide();
-				CUBESHAPE = 0;
-			} 
-		});
-	}*/
-
+function cubeshapeCases(){
 	$("#cubeshape1").click(function(){
-		console.log(CUBESHAPE);
-			if([0,2,3].indexOf(CUBESHAPE) >= 0){
-				if([2,3].indexOf(CUBESHAPE) >= 0){
-					$("#cu2").hide();
-					$("#cu3").hide();
-				}
-				$("#cu1").show();
-				CUBESHAPE = 1;
-			} else if (CUBESHAPE === 1){
-				$("#cu1").hide();
-				CUBESHAPE = 0;
-			} 
-			
-		});
-	$("#cubeshape2").click(function(){
-			console.log(CUBESHAPE);
-			if([0,1,3].indexOf(CUBESHAPE) >= 0){
-				if([1,3].indexOf(CUBESHAPE) >= 0){
-					$("#cu1").hide();
-					$("#cu3").hide();
-				}
-				$("#cu2").show();
-				CUBESHAPE = 2;
-			} else if (CUBESHAPE === 2) {
+		if([0,2,3].indexOf(CUBESHAPE) >= 0){
+			if([2,3].indexOf(CUBESHAPE) >= 0){
 				$("#cu2").hide();
-				CUBESHAPE = 0;
-			} 
+				$("#cu3").hide();
+			}
+			$("#cu1").show();
+			CUBESHAPE = 1;
+		} else if (CUBESHAPE === 1){
+			$("#cu1").hide();
+			CUBESHAPE = 0;
+		} 
+		
+	});
 
-		});
+	$("#cubeshape2").click(function(){
+		if([0,1,3].indexOf(CUBESHAPE) >= 0){
+			if([1,3].indexOf(CUBESHAPE) >= 0){
+				$("#cu1").hide();
+				$("#cu3").hide();
+			}
+			$("#cu2").show();
+			CUBESHAPE = 2;
+		} else if (CUBESHAPE === 2) {
+			$("#cu2").hide();
+			CUBESHAPE = 0;
+		} 
+
+	});
 
 	$("#cubeshape3").click(function(){
-		console.log(CUBESHAPE);
-			if([0,1,2].indexOf(CUBESHAPE) >= 0){
-				if([1,2].indexOf(CUBESHAPE) >= 0){
-					console.log("bbwef");
-					$("#cu1").hide();
-					$("#cu2").hide();
-				}
-				$("#cu3").show();
-				CUBESHAPE = 3;
-			} else if (CUBESHAPE === 3){
-				$("#cu3").hide();
-				CUBESHAPE = 0;
-			} 
-			
-		});
+		if([0,1,2].indexOf(CUBESHAPE) >= 0){
+			if([1,2].indexOf(CUBESHAPE) >= 0){
+				$("#cu1").hide();
+				$("#cu2").hide();
+			}
+			$("#cu3").show();
+			CUBESHAPE = 3;
+		} else if (CUBESHAPE === 3){
+			$("#cu3").hide();
+			CUBESHAPE = 0;
+		} 
+		
+	});
 }
 
 
