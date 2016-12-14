@@ -12,12 +12,49 @@ title: Solving Square-1
 				<p>The ability of the Square-1 to change into positions that are not cubic-shaped is what drives many away from learning how to solve it. In reality, the Square-1 is not that difficult of a puzzle, as we will see later.</p>
 				<p>If you are learning how to solve a Square-1, I presume you know how to solve a regular Rubik's Cube. If not, that's okay, but the tutorial might be a little harder to follow. Besides, you should learn how to solve the normal 3x3 cube before learning how to solve Square-1 anyway!</p>
 				<center><h2>Video Tutorial</h2></center>
-				<p>If you're more of a visual learner rather than reading text, I put together a video tutorial on how to solve a Square-1. The video covers exactly the same content as this text tutorial. </p>
+				<p>If you're more of a visual learner rather than reading text, I put together a video tutorial on how to solve a Square-1. The video covers mostly the same content as this text tutorial. </p>
 				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Ds2lC5bVui4" frameborder="0" allowfullscreen></iframe></center>
 				<p>However, if you would much prefer using this text tutorial, then read on!</p>
+				<center><h2>Credits</h2></center>
+				<p>Much of this tutorial would not be possible without support from many viewers who have given feedback about my video tutorial over the years. I also would like to acknowledge <a href="https://www.worldcubeassociation.org/results/p.php?i=2014NURU01">Jabari</a>'s <a href="http://pzl.azurewebsites.net/generator?puzzle=sq1">Square-1 image generator</a> for the images on this site.</p>
 				<center><h2>Basic Foundations and Terminology</h2></center>
 				<p>The way you want to hold a Square-1 is with the star-esque shapes on the top and bottom layers. The middle layer should be in a position such that the smaller rectangle is on the left rather than the right. If your middle layer has the smaller rectangle on the right; you are holding it wrong, flip the cube over so that it is on the left.</p>
 				<p>Your color scheme may differ from mine (I hold black/white top and red front), but no matter what you should be holding the small rectangle on the left. If you are a lefty, then you may opt to have it on the right, and follow this tutorial by simply mirroring the algorithms.</p>
-				<p>Now note there are only three ways you can turn the Square-1: the top face, the bottom face, and the "right" face, which can only be turned 180 degrees. For this reason, the notation we use in Square-1 solving is using a coordinate pair to represent how much to turn the top and bottom faces by and a forward slash (/) to represent an 180 degree turn of the so-called <b>slice</b>.</p>
+				<p>Now note there are only three ways you can turn the Square-1: the top face, the bottom face, and the "right" face, which can only be turned 180 degrees. For this reason, the notation we use in Square-1 solving is using a coordinate pair to represent how much to turn the top and bottom faces by and a forward slash (<code>/</code>) to represent an 180 degree turn of the so-called <b>slice</b>.</p>
+				<p>The coordinate pair representing the top/bottom movement represents the number of 30-degree intervals you must turn the top and bottom. The first number is for the top face and the second number is for the second face. A positive number represents a clockwise turn, and a negative number represents a counterclockwise turn.</p>
+				<p>This notation takes a while getting used to since it is different from normal 3x3 notation. Try the following examples:</p>
+				<ul>
+					<li><p><code>/3,0/1,0/0,-1/</code></p>
+						<ul>
+							<li><p>Each "<code>/</code>" will represent an 180 degree turn of the slice. <code>3,0</code> means you move the top face 90 degrees clockwise. <code>1,0</code> means you move the top face 30 degrees clockwise, and <code>0,-1</code> means you move the bottom face 30 degree counter-clockwise.</p></li>
+						</ul>
+					</li>
+					<li><p><code>-5,3/2,-1/4,6</code></p>
+						<ul>
+						<li><p><code>-5,3</code> would mean turn the top 150 degrees (2 corners and 1 edge) counterclockwise and bottom 90 degrees clockwise, etc.  
+						</ul>
+					</li>
+				</ul>
+				<p>If you don't want to remember this in terms of degrees, you can always remember that each corner has a value of 2 and each edge has a value of 1. Then, when you are performing a move corresponding to a certain number, you can count off the number based off the corner-edge values.</p>
+				<p>Side note: the images should be viewed as if you were looking at your Square-1 from above. So the solved position of your Square-1 (assuming white top) red front would look like:
+				<center><img src="../img/sq1tut/solved.png"/ style="padding-bottom: 10px"></center>
+				<center><h2>The Five Steps</h2></center>
+				<p>There are five steps to solving the Square-1 (using the Vanderbergh method):</p>
+				<ul>
+					<li><p><i>Cubeshape</i></p></li>
+					<li><p><i>Corner Orientation (CO)</i></p></li>
+					<li><p><i>Edge Orientation (EO)</i></p></li>
+					<li><p><i>Corner Permutation (CP)</i></p></li>
+					<li><p><i>Edge Permutation (EP)</i></p></li>
+				</ul>
+				<p>From now on, I will be using these above abbreviations throughout the tutorial.</p>
+				<center><h2>Cubeshape</h2></center>
+				<p>Cubeshape, as the name suggests, involves getting the puzzle back into a cube. There are various ways you can do this, but the one I will be teaching here is the simplest method; getting all 8 edges next to each like so (ignore the colors for now):</p><center><img src="../img/sq1tut/cubeshape8.png"/></center>
+				<p>There's no other way to explain this step other than to experiment with the cube and try to bunch edges together. A good approach to go for is to first get 6 edges together and the remaining 2 edges on the other layer. Then you will have one of three cases:</p>
+				<div id="cu1"><center><b>This case is simple, simply move the edges up.</b></center></div>
+				<div id="cu2"><center><b>Also a simple case, move the edges up.</b></center></div>
+				<div id="cu3"><center><b>You need to do this algorithm:<br><code>2,0/3,-2/0,2/</code></b></center></div>
+				<img src="../img/sq1tut/cubeshapecase1.png" id="cubeshape1" width="33.3%"/><img src="../img/sq1tut/cubeshapecase2.png" id="cubeshape2" width="33.3%"/><img src="../img/sq1tut/cubeshapecase3.png" id="cubeshape3" width="33.3%"/>
 			</div>
+
 		</div>
