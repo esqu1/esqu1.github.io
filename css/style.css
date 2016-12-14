@@ -180,3 +180,15 @@ nav ul li.dropdown{
     border: 2px hidden #ffffff;
     box-shadow: 0px 8px 10px rgba(0,0,0,0.8);
 }
+
+img#cubeshape1, img#cubeshape2, img#cubeshape3 {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+img#cubeshape1:hover, img#cubeshape2:hover, img#cubeshape3:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
