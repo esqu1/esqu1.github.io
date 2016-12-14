@@ -143,6 +143,10 @@ nav li a:hover {
 	iframe {
 		width: 100%;
 	}
+
+	img.full {
+		width: 60%;
+	}
 }
 
 html, body{
