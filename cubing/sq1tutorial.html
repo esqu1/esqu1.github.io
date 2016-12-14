@@ -78,6 +78,34 @@ title: Solving Square-1
 				<center><h2>Corner Permutation (CP)</h2></center>
 				<p>CP involves permuting the corners correctly so that their side stickers match.</p>
 				<p>We begin by permuting the corners of the bottom layer. You want to find two adjacent corners on the bottom layer that are already permuted correctly and place them in the back like so:</p>
+				<center><img src="../img/sq1tut/cp.png"/></center>
+				<p>The algorithm to swap the two corners on the bottom front is:</p>
+				<center><p><code>/3,-3/0,3/-3,0/3,0/-3,0/</code></p></center>
+				<p>If you notice you don't have any permuted corners on the bottom but rather have to permute them diagnally, you can simply perform this algorithm once and you will have two adjacent corners permuted.</p>
+				<p>Now if you wish to permute the corners on the top, all you have to do is swap the layers and do the same steps as above. The algorithm to swap the layers is:</p>
+				<center><p><code>/6,6/</code></p></center>
+				<p>Simple! And from here, we move onto the last step.</p>
+				<center><h2>Edge Permutation (EP)</h2></center>
+				<p>In EP, we will permute the edges and solve the rest of the cube. This step requires some thinking on how to do efficiently.</p>
+				<p>The primary algorithm we will use is:</p>
+				<center><p><code>-2,0/3,0/-1,-1/-2,1/2,0</code></p></center>
+				<p>What this algorithm will do is swap the two adjacent edges in the back, for the top and bottom, like so:</p>
+				<center><img src="../img/sq1tut/ep.png"/></center>
+				<p>Each layer will have its own separate permutation, and the goal is to slowly reduce each layer into a smaller and smaller case in order to finally solve the cube. You will need to see how to solve each permutation through a series of adjacent swaps. For example, a U-Perm like shown:</p>
+				<center><img src="../img/sq1tut/ep2.png"/></center>
+				<p>will need the back-right edges to be swapped first, and then the back-left edges to be swapped. Once you know how to solve each permutation through a series of adjacent swaps, then you can use the algorithm above to solve each layer simultaneously.</p>
+				<center><h2>Parity Errors</h2></center>
+				<p>But wait...you might ask...what happens when the top requires an even amount of swaps and the bottom needs an odd amount (or vice versa)? This is a parity error, which results from the fact that the Square-1 can change shape.</p>
+				<p>Unfortunately, fixing this error requires a long algorithm, but there are ways you can memorize this algorithm easily:</p>
+				<center><p><code>/3,3/1,0/-2,-2/2,0/2,2/-1,0/-3,-3/0,2/-2,-2/2,0</code></p></center>
+				<p>This algorithm will cycle the edges on the top layer counter-clockwise, which will solve this case:</p>
+				<center><img src="../img/sq1tut/parity.png"/></center>
+				<p>The key to remembering this algorithm is:</p>
+				<center><p><code><span style="color:red">/3,3/1,0/-2,-2/</span>2,0<span style="color:blue">/2,2/-1,0/-3,-3/</span>0,2/-2,-2/2,0</code></p></center>
+				<p>The red and blue parts of the algorithm are simply the reversed of each other separated by a <code>2,0</code>. This should make remembering the algorithm a lot easier.</p>
+				<center><h2>Flipping the Middle Layer</h2></center>
+				<p>Flipping the middle layer is easy:</p>
+				<center><p><code>/6,0/6,0/6,0</code></p></center>
 			</div>
 
 		</div>

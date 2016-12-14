@@ -135,9 +135,13 @@ nav li a:hover {
 }
 
 @media screen and (max-width: 760px){
-    .container{
+    .container {
 		margin: 0;
 		padding: 20px;
+	}
+
+	iframe {
+		width: 100%;
 	}
 }
 
