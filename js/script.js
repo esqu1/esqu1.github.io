@@ -18,7 +18,7 @@ function debounce(func, wait, immediate) {
 };
 
 function dropdown(){
-	$("li.dropdown").hover(function(){
+	$("li.dropdown").click(function(){
 		$(this).find(".dropdown-content").fadeToggle(100); 
 	}, function(){
 		$(this).find(".dropdown-content").fadeToggle(100);
@@ -84,6 +84,14 @@ function cubeshapeCases(){
 	});
 }
 
+function appear(){
+	if (!$("nav ul").hasClass("response")){
+		$("nav ul").addClass("response");
+	} else {
+		$("nav ul").removeClass("response");
+	}
+}
+
 
 $(document).ready(function(){
 	new WOW().init();
@@ -102,4 +110,8 @@ $(document).ready(function(){
 		console.log("blah");
 	}
 	CUBESHAPE = 0;
+	$('.hover').bind('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
 })

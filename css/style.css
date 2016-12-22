@@ -6,13 +6,13 @@
 
 .text{
 	min-height: 100%;
-    margin-bottom: -142px; 
+	margin-bottom: -142px; 
 }
 
 .text:after{
 	content: "";
-  	display: block;
-  	height: 142px; 
+	display: block;
+	height: 142px; 
 }
 
 h1{
@@ -45,9 +45,9 @@ p{
 
 .academics{
 	background: rgb(231, 76, 60);
-    background: -webkit-linear-gradient(rgb(231, 76, 60), rgb(192, 57, 43));
-    background: -o-linear-gradient(rgb(231, 76, 60), rgb(192, 57, 43));
-    background: -moz-linear-gradient(rgb(231, 76, 60), rgb(192, 57, 43));
+	background: -webkit-linear-gradient(rgb(231, 76, 60), rgb(192, 57, 43));
+	background: -o-linear-gradient(rgb(231, 76, 60), rgb(192, 57, 43));
+	background: -moz-linear-gradient(rgb(231, 76, 60), rgb(192, 57, 43));
 	background: linear-gradient(rgb(231, 76, 60), rgb(192, 57, 43));
 	height: 19vw;
 	line-height: 19vw;
@@ -55,9 +55,9 @@ p{
 
 .coding{
 	background: rgb(52, 152, 219);
-    background: -webkit-linear-gradient(rgb(52, 152, 219),rgb(41, 128, 185));
-    background: -o-linear-gradient(rgb(52, 152, 219),rgb(41, 128, 185));
-    background: -moz-linear-gradient(rgb(52, 152, 219),rgb(41, 128, 185));
+	background: -webkit-linear-gradient(rgb(52, 152, 219),rgb(41, 128, 185));
+	background: -o-linear-gradient(rgb(52, 152, 219),rgb(41, 128, 185));
+	background: -moz-linear-gradient(rgb(52, 152, 219),rgb(41, 128, 185));
 	background: linear-gradient(rgb(52, 152, 219),rgb(41, 128, 185));
 	height: 19vw;
 	line-height: 19vw;
@@ -65,9 +65,9 @@ p{
 
 .speedcubing{
 	background: rgb(26, 188, 156);
-    background: -webkit-linear-gradient(rgb(26, 188, 156),rgb(22, 160, 133));
-    background: -o-linear-gradient(rgb(26, 188, 156),rgb(22, 160, 133));
-    background: -moz-linear-gradient(rgb(26, 188, 156),rgb(22, 160, 133));
+	background: -webkit-linear-gradient(rgb(26, 188, 156),rgb(22, 160, 133));
+	background: -o-linear-gradient(rgb(26, 188, 156),rgb(22, 160, 133));
+	background: -moz-linear-gradient(rgb(26, 188, 156),rgb(22, 160, 133));
 	background: linear-gradient(rgb(26, 188, 156),rgb(22, 160, 133));
 	height: 19vw;
 	line-height: 19vw;
@@ -88,8 +88,8 @@ p{
 
 span{
 	display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
+	vertical-align: middle;
+	line-height: normal;
 }
 
 
@@ -105,26 +105,28 @@ span{
 }
 
 nav ul{
+	float: right;
+	text-align: right;
 	list-style-type: none;
 	padding: 0;
-    overflow: hidden;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    width: 100%;
+	overflow: hidden;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	width: 100%;
 	background-color: rgba(242,242,242,0.5);
 }
 
 nav li {
-	float: right;
+	display: inline;
 }
 
 nav li a {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;    
+	display: inline-block;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;    
 	color: #d6d4d4;		
 	-webkit-transition: .5s;
 	transition: .5s;
@@ -135,7 +137,7 @@ nav li a:hover {
 }
 
 @media screen and (max-width: 760px){
-    .container {
+	.container {
 		margin: 0;
 		padding: 20px;
 	}
@@ -175,18 +177,18 @@ nav ul li.dropdown{
 
 
 .dropdown-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    color: black;
-    padding: 5px 18px;
-    text-align: center;
-    z-index: 2;				
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	color: black;
+	padding: 5px 18px;
+	text-align: center;
+	z-index: 2;				
 	/*-webkit-transition: 0s;
 	transition: 0s;*/
 	background-color: #c5e8e0;
-    border: 2px hidden #ffffff;
-    box-shadow: 0px 8px 10px rgba(0,0,0,0.8);
+	border: 2px hidden #ffffff;
+	box-shadow: 0px 8px 10px rgba(0,0,0,0.8);
 }
 
 img#cubeshape1, img#cubeshape2, img#cubeshape3 {
@@ -199,4 +201,36 @@ img#cubeshape1, img#cubeshape2, img#cubeshape3 {
 img#cubeshape1:hover, img#cubeshape2:hover, img#cubeshape3:hover {
 	opacity: 0.5;
 	filter: alpha(opacity=50);
+}
+
+nav ul li.icon{
+	display: none;
+}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+	nav ul li:not(:first-child) {display: none;}
+	nav ul li.icon {
+		float: right;
+		display: inline-block;
+	}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+	nav ul.response {position: relative;}
+	nav ul.response li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	nav ul.response li {
+		float: none;
+		display: inline;
+	}
+	nav ul.response li a {
+		display: block;
+		text-align: left;
+	}
+
 }
