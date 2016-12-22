@@ -136,20 +136,6 @@ nav li a:hover {
 	color: #006bb3;
 }
 
-@media screen and (max-width: 760px){
-	.container {
-		margin: 0;
-		padding: 20px;
-	}
-
-	iframe {
-		width: 100%;
-	}
-
-	img.full {
-		width: 60%;
-	}
-}
 
 html, body{
 	height:100%;
@@ -207,18 +193,48 @@ nav ul li.icon{
 	display: none;
 }
 
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:680px) {
-	nav ul li:not(:first-child) {display: none;}
+.container .buttons {
+	float: right;
+}
+
+@media screen and (max-width: 680px){
+	.container {
+		margin: 0;
+		padding: 20px;
+	}
+
+	iframe {
+		width: 100%;
+	}
+
+	img.all {
+		width: 100%;
+	}
+
+	.container .buttons {
+		margin: auto;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	nav ul {
+		position: relative;
+	}
+
+	nav ul li:not(:first-child) {
+		display: none;
+	}
+
 	nav ul li.icon {
 		float: right;
 		display: inline-block;
 	}
-}
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:680px) {
-	nav ul.response {position: relative;}
+	nav ul.response {
+		position: relative;
+	}
+
 	nav ul.response li.icon {
 		position: absolute;
 		right: 0;
@@ -232,5 +248,4 @@ nav ul li.icon{
 		display: block;
 		text-align: left;
 	}
-
 }
