@@ -27,7 +27,7 @@ title: "Cubeshape Parity Tutorial"
 				</center>
 				<p>meaning the corners require a total of 5 swaps. In total, we count 9 swaps, meaning the scramble has odd parity with respect to the reference scheme.</p>
 				<p>Now, for each cubeshape we require two ways of doing cubeshape that will either preserve or switch parity. It so happens that for the cases with a star shape, the two ways differ by turning the star layer by 2 units (I refer to this as a "star-shift"). This changes parity because it performs an equivalent of 5 swaps on the corners. If we end up counting an even number of swaps, we perform the cubeshape algorithm normally without a star-shift. If we count an odd amount of swaps, then we perform a star-shift and solve cubeshape normally. In our case, we have odd parity, so we would do</p>
-				<center><code><span style="color:red">0,2</span>/2,4/-2,-1/3,3/</code></center>
+				<center><p><code><span style="color:red">0,2</span>/2,4/-2,-1/3,3/</code></p></center>
 				<p>where the red part indicates the star-shift that changes parity.</p>
 				<p>BE CAREFUL: for this particular case, we require the 8-group of edges to be in the back. If we solved cubeshape with it in the front, then our two ways of solving a parity error would be reversed, since this is equivalent to rotating the star layer by 6 units (3 swaps). Pay attention to these things when you learn cases.</p>
 				<center><h2>Another Example Trace</h2></center>
