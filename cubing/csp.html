@@ -1,0 +1,34 @@
+---
+layout: cubing
+title: "Cubeshape Parity Tutorial"
+---
+		<div class="text">
+			<div class="container">
+				<h1>Cubeshape Parity</h1><hr>
+				<p>Cubeshape Parity, as the name suggests, involves fixing parity errors on the Square-1 during the cubeshape step. The main advantage to this method is that checking for parity occurs during inspection, which isn't factored into your final time. While the prospects of this method are groundbreaking, the method is still in development and is not currently being used in competitions by a lot of cubers, due to the amount of practice it takes to master this method.</p>
+				<center><h2>First, What is Parity?</h2></center>
+				<p>The term "parity" is often thrown around incorrectly, and the correct phrase that should be used is "parity error". <b>Parity</b> refers to the oddness/evenness of the number of swaps required to solve a puzzle. (For example, an Adj swap has odd parity, since it requires one swap, and an H-Perm is of even parity since it requires 2.) Notice that when you make a slice turn of the puzzle misaligned by <code>1,0</code>, you swap 2 pairs of corners and 2 pairs of edges, making 4 swaps. Therefore, keeping the puzzle in cubeshape will maintain the puzzle in even parity.</p>
+				<p>Strange things happen when the Square-1 is not in the cubeshape, however. For example, setup the Square-1 with the moves <code>/3,3/1,2/2,-2</code>. Notice that by doing a slice move here, you swap 3 pairs of corners, resulting in 3 swaps and creating odd parity. Then, when you reverse the moves above, you will have a parity error, since you cannot return the puzzle to even parity by simply keeping it in cubeshape. </p>
+				<p>Colloquially, however, we simply use the word "parity" to refer to the fact that a puzzle has this parity error. In Cubeshape Parity (also known as <b>CSP</b>), we aim to fix parity errors during the cubeshape step. </p>
+				<center><h2>The Basic Idea</h2></center>
+				<p>For every case of cubeshape, we assign what we call a <b>reference scheme</b>. This is a known position of the Square-1 in a particular cubeshape. Because parity relies on the number of swaps, essentially we will be counting how many swaps it takes to restore the puzzle to this reference scheme. Depending on whether we determine that there is even or odd parity, we will perform cubeshape in a particular way that restores the cubeshape and fixes even parity. </p>
+				<p>The best way to learn CSP is to provide examples. Consider the case 80/Star, with the following reference scheme: (images are viewed from the top of the puzzle)</p>
+				<center><img class="all" src="../img/csp/80star.png"/></center>
+				<p>Pretend that this is the "solved" position of the 80/Star case; given a scramble in this case we need to count how many pair swaps it takes to return the puzzle to the reference scheme. If you know how to solve a Rubik's Cube blindfolded, it's the same principle; we count the cycles for where which every piece needs to go, except this time we don't care about the location of the pieces, we only care about whether the number is even or odd.</p>
+				<p>If you don't know what I'm talking about, here's a short example. Scramble your cube with the following scramble (I'm assuming you use white top, red front):</p>
+				<center><p><code>3, -1/1, -2/-1, -4/1, -2/2, 0/-3, -3/3, 0/-1, -5/-4, -2/6, 0</code></p></center>
+				<p>Starting with the YR edge, we find the place where it has to go in the reference scheme. In that place, there is a YB edge. We count "1" to represent we need one swap so far. Next, we see where the YB edge has to go, and we see that a WR edge is in its place. Then, we count "2" since now there are 2 swaps.</p>
+				<p>Now, since white-red goes back to where we started, we will have to start with a new cycle. and count the remaining number of swaps. We start with the WB edge, since the WG edge is already in its place. This has to go where the WO edge is, so we count "3". This returns the white-orange piece to its original position, meaning we have to start a new cycle. The only cycle that remains is between the YG and YO edges, which means we count up to "4". Thus, the edges require a total of 4 swaps to solve to the reference scheme.</p>
+				<p>We now do the same for the corners, without resetting the numbering. Without explanation, using the reference scheme we have the following cycles</p>
+				<center>
+					<p>WBO &#8594; YGO &#8594; WGR</p>
+					<p>WOG &#8594; YGR</p>
+					<p>YBR &#8594; WRB &#8594; YOB</p>
+				</center>
+				<p>meaning the corners require a total of 5 swaps. In total, we count 9 swaps, meaning the scramble has odd parity with respect to the reference scheme.</p>
+				<p>Now, for each cubeshape we require two ways of doing cubeshape that will either preserve or switch parity. It so happens that for the cases with a star shape, the two ways differ by turning the star layer by 2 units (I refer to this as a "star-shift"). This changes parity because it performs an equivalent of 5 swaps on the corners. If we end up counting an even number of swaps, we perform the cubeshape algorithm normally without a star-shift. If we count an odd amount of swaps, then we perform a star-shift and solve cubeshape normally. In our case, we have odd parity, so we would do</p>
+				<center><code><span style="color:red">0,2</span>/2,4/-2,-1/3,3/</code></center>
+				<p>where the red part indicates the star-shift that changes parity.</p>
+				<p>BE CAREFUL: for this particular case, we require the 8-group of edges to be in the back. If we solved cubeshape with it in the front, then our two ways of solving a parity error would be reversed, since this is equivalent to rotating the star layer by 6 units (3 swaps). Pay attention to these things when you learn cases.</p>
+			</div>
+		</div>
