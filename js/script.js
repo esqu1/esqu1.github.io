@@ -5,21 +5,6 @@ if(!window.matchMedia( "(max-width: 680px)" ).matches) {
 	$("li.dropdown .dropdown-content a:last").css("border-radius", "0px 0px 10px 10px");
 }
 
-function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		var later = function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		};
-		var callNow = immediate && !timeout;
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (callNow) func.apply(context, args);
-	};
-};
-
 function dropdown(){
 	$("li.dropdown").click(function(){
 		$(this).find(".dropdown-content").fadeToggle(100); 
