@@ -192,25 +192,52 @@ nav ul li.icon{
 	display: none;
 }
 
-code {
-    white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */ 
+.alg {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 10px;
+	padding-bottom: 10px;
+}
+
+span {
+	display: block;
 }
 
 td {
 	text-align: center;
 	padding: 10px;
+	display: block;
 }
 
 th, td {
     border-bottom: 1px solid #ddd;
 }
+/*
+.algblock {
+	width: 86vw;
+	margin: 0 auto;
+}*/
+
+
+.column {
+	display: inline-block;
+	width: 31%;
+	text-align: center;
+	vertical-align: top;
+}
 
 .container .buttons {
 	float: right;
+}
+
+img.algcase {
+	width: 75%;
+	padding: 20px;
+}
+
+@media screen and (max-width: 800px){
+	.container {
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 680px){
@@ -219,12 +246,16 @@ th, td {
 		padding: 20px;
 	}
 
+	.column {
+		width:100%;
+	}
+
 	iframe {
 		width: 100%;
 	}
 
 	img.all {
-		width: 100%;
+		width: 80%;
 	}
 
 	.container .buttons {
