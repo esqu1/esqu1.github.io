@@ -210,6 +210,12 @@ th, td {
 	margin: 0 auto;
 }*/
 
+b.algblock{
+	display:block;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 10px;
+	padding-bottom: 10px;
+}
 
 .column {
 	display: inline-block;
@@ -224,7 +230,8 @@ th, td {
 
 img.algcase {
 	width: 75%;
-	padding: 20px;
+	padding-top: 30px;
+	padding-bottom: 20px;
 }
 
 @media screen and (max-width: 800px){
@@ -249,6 +256,10 @@ img.algcase {
 
 	img.all {
 		width: 100%;
+	}
+
+	img.algcase {
+		width: 75%;
 	}
 
 	.container .buttons {
