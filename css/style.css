@@ -86,13 +86,6 @@ p{
 	line-height: 45vw;
 }
 
-span{
-	display: inline-block;
-	vertical-align: middle;
-	line-height: normal;
-}
-
-
 * {
 	margin: 0;
 }
