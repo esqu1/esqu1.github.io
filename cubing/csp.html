@@ -17,7 +17,7 @@ title: "Cubeshape Parity Tutorial"
 				<center><img class="all" src="../img/csp/80star.png"/></center>
 				<p>Pretend that this is the "solved" position of the 80/Star case; given a scramble in this case we need to count how many pair swaps it takes to return the puzzle to the reference scheme. If you know how to solve a Rubik's Cube blindfolded, it's the same principle; we count the cycles for where which every piece needs to go, except this time we don't care about the location of the pieces, we only care about whether the number is even or odd.</p>
 				<p>If you don't know what I'm talking about, here's a short example. Scramble your cube with the following scramble (I'm assuming you use white top, red front):</p>
-				<center><p><b>3,-1/1,-2/-1,-4/1,-2/2,0/-3,-3/3,0/-1,-5/-4,-2/6,0</b></p></center>
+				<center><p><b>3,-1/1,-2/-1,-4/1,-2/2,0/<br>-3,-3/3,0/-1,-5/-4,-2/6,0</b></p></center>
 				<p>Starting with the YR edge, we find the place where it has to go in the reference scheme. In that place, there is a YB edge. We count "1" to represent we need one swap so far. Next, we see where the YB edge has to go, and we see that a WR edge is in its place. Then, we count "2" since now there are 2 swaps.</p>
 				<p>Now, since white-red goes back to where we started, we will have to start with a new cycle. and count the remaining number of swaps. We start with the WB edge, since the WG edge is already in its place. This has to go where the WO edge is, so we count "3". This returns the white-orange piece to its original position, meaning we have to start a new cycle. The only cycle that remains is between the YG and YO edges, which means we count up to "4". Thus, the edges require a total of 4 swaps to solve to the reference scheme.</p>
 				<p>We now do the same for the corners, without resetting the numbering. Without explanation, using the reference scheme we have the following cycles</p>
@@ -35,7 +35,7 @@ title: "Cubeshape Parity Tutorial"
 				<p>Here's another example trace, this time with the shape Scallop/Scallop. This has the reference scheme:
 				<center><img class="all" src="../img/csp/scallop2.png"/></center>
 				<p>We consider the scramble</p>
-				<center><p><b>-2,0/-1,-4/0,-3/0,-3/4,-2/2,-4/-5,0/-3,-3/-5,-2/-4,0/4,0/-2,-2/4,6</b></p></center>
+				<center><p><b>-2,0/-1,-4/0,-3/0,-3/4,-2/2,-4/-5,0/-3,-3<br>/-5,-2/-4,0/4,0/-2,-2/4,6</b></p></center>
 				<p>The edges must cycle like so:</p>
 				<center>
 					<p>WO &#8594; YR &#8594; YG &#8594; WG &#8594; YB &#8594; WB &#8594; YO &#8594; WR</p>
