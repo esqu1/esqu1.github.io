@@ -2,6 +2,7 @@
 	margin: 50px 20% 50px 20%;
 	padding: 50px;
 	font-family: 'Raleway', sans-serif;
+	visibility: hidden;
 }
 
 .header {
