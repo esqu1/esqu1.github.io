@@ -1,7 +1,11 @@
 .container{
-	margin: 50px 10% 50px 10%;
+	margin: 50px 20% 50px 20%;
 	padding: 50px;
 	font-family: 'Raleway', sans-serif;
+}
+
+.header {
+	text-align: center;
 }
 
 .text{
@@ -225,7 +229,8 @@ b.algblock{
 }
 
 .container .buttons {
-	float: right;
+	margin-top: 30px;
+	text-align: center;
 }
 
 img.algcase {
