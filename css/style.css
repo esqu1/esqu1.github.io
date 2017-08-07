@@ -23,15 +23,28 @@
 	height: 142px; 
 }
 
+a.button i {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
 h1{
 	text-align: center;
 	padding-bottom: 5px;
+}
+
+h2 {
+	padding: 10px;
 }
 
 p{
 	line-height: 200%;
 	padding: 10px;
 	font-size: 16px;
+}
+
+ul li {
+	padding: 5px;
 }
 
 .photo{
