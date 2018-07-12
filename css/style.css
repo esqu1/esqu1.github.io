@@ -1,7 +1,7 @@
 .container{
 	margin: 10px 20% 10px 20%;
 	padding: 50px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'PT Serif', sans-serif;
 }
 
 .hide.container{
@@ -30,17 +30,17 @@ a.button i {
 
 h1{
 	text-align: center;
-	padding-bottom: 5px;
+	padding: 10px;
 }
 
-h2 {
+h2, h3, h4, h5, h6 {
 	padding: 10px;
 }
 
 p{
 	line-height: 175%;
 	padding: 10px;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 ul li {
@@ -177,7 +177,6 @@ nav ul li.dropdown{
 }
 
 .dropdown-content {
-	/*visibility: hidden;*/
 	position: fixed;
 	background-color: rgba(0,0,0,0);
 }
@@ -189,9 +188,7 @@ nav ul li.dropdown{
 	color: black;
 	padding: 5px 18px;
 	text-align: center;
-	z-index: 2;				
-	/*-webkit-transition: 0s;
-	transition: 0s;*/
+	z-index: 2;
 	background-color: #c5e8e0;
 	border: 2px hidden #ffffff;
 	box-shadow: 0px 8px 10px rgba(0,0,0,0.8);
@@ -219,9 +216,9 @@ nav ul li.icon{
 	padding-bottom: 10px;
 }
 
-span {
+/*span {
 	display: block;
-}
+}*/
 
 td {
 	text-align: center;
@@ -232,11 +229,6 @@ td {
 th, td {
     border-bottom: 1px solid #ddd;
 }
-/*
-.algblock {
-	width: 86vw;
-	margin: 0 auto;
-}*/
 
 b.algblock{
 	display:block;
