@@ -1,0 +1,3 @@
+[submodule "compressed-textures-experiment"]
+	path = compressed-textures-experiment
+	url = git@github.com:esqu1/compressed-textures-experiment.git
